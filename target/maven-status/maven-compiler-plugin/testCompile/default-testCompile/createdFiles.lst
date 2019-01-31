@@ -1,0 +1,11 @@
+runner/TestRunner.class
+utilities/DataAtual.class
+steps/steps_parte1_cenario02.class
+pages/Login.class
+utilities/UtilDiretorio.class
+steps/steps_parte1_cenario03.class
+utilities/ExtractJsonMockaroo.class
+pages/MenuAmericanas.class
+steps/steps_parte1_cenario01.class
+utilities/Print.class
+utilities/GeraCPF.class
