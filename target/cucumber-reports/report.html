@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 30, 2019 11:17:03 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 31, 2019 12:40:09 AM</span>
 				</a>
 			</li>
 			<li>
@@ -130,10 +130,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -145,10 +145,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -160,10 +160,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>9</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='70%'><span class='strong'>14</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='8.333%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='5%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='25%'>5</span> others
 				</div>
 			</div>
 		</div>
@@ -180,12 +180,12 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Cadastro de novo login com email teste@hotmail.com - Parte 1</span>
-						<span class='test-time'>Jan 30, 2019 11:17:03 PM</span>
+						<span class='test-time'>Jan 31, 2019 12:40:10 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 20s+603ms</span>
+	<span class='duration right label'>0h 0m 20s+820ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Cadastrar novo login com email teste@hotmail.com</span>
@@ -229,15 +229,15 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='7'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>Cadastro de novo login inserir uma senha com 2 caracteres - Parte 1</span>
-						<span class='test-time'>Jan 30, 2019 11:17:24 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Jan 31, 2019 12:40:30 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='8' status='fail'>
-	<span class='duration right label'>0h 0m 10s+371ms</span>
+<div class='scenario node' test-id='8' status='pass'>
+	<span class='duration right label'>0h 0m 14s+59ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Cadastro de novo login inserir uma senha com 2 caracteres</span>
@@ -259,113 +259,20 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='11' class='node and fail' status='fail'>
+		<li test-id='11' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And informo o campo senha com dois caracteres os demais campos devem estar corretos</span>
-				<div class='pre'><pre>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:13513
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Air-de-Guilherme.local', ip: '192.168.1.100', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '9.0.4'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.Login.cadastrarLogin(Login.java:21)
-	at steps.steps_parte1_cenario02.informo_o_campo_senha_com_caracteres_os_demais_campos_devem_estar_corretos(steps_parte1_cenario02.java:60)
-	at ✽.And informo o campo senha com dois caracteres os demais campos devem estar corretos(parte1_cenario02.feature:7)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:13513
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.Login.cadastrarLogin(Login.java:21)
-	at steps.steps_parte1_cenario02.informo_o_campo_senha_com_caracteres_os_demais_campos_devem_estar_corretos(steps_parte1_cenario02.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
-	at java.base/java.net.Socket.connect(Socket.java:591)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 70 more
-</pre></div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='12' class='node then skip' status='skip'>
+		<li test-id='12' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then a mensagem Senha Fraca e Senha precisa ter entre 6 a 50 caracteres deve aparecer</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
@@ -377,12 +284,12 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='13'>
 					<div class='test-heading'>
 						<span class='test-name'>Cadastro de novo login inserir cpf invalido - Parte 1</span>
-						<span class='test-time'>Jan 30, 2019 11:17:34 PM</span>
+						<span class='test-time'>Jan 31, 2019 12:40:44 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='14' status='fail'>
-	<span class='duration right label'>0h 0m 16s+946ms</span>
+	<span class='duration right label'>0h 0m 18s+126ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Cadastro de novo login inserir cpf invalido</span>
@@ -424,6 +331,90 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at steps.steps_parte1_cenario03.a_mensagem_deve_aparecer(steps_parte1_cenario03.java:73)
 	at ✽.Then a mensagem Campo inválido deve aparecer(parte1_cenario03.feature:8)
 </pre></div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>Cadastrar novo login e validacoes - Parte 2</span>
+						<span class='test-time'>Jan 31, 2019 12:41:03 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='20' status='pass'>
+	<span class='duration right label'>0h 0m 17s+796ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Cadastro de novo login e validacoes</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='21' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given que estou na tela principal do americanas4</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='22' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When clico no link Cliente novo? Cadastrar antes de clicar faca login ou cadastre-se4</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='23' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And informo todos os campos corretamente salvando novo usuario</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='24' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And logado na aplicacao fazer busca pelo texto Moto G6</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='25' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And adiciono dois produtos a sua cesta</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='26' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And valido que o total da compra é inferior a 5 mil reais</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='27' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And valido que a compra pode ser dividida em até 10x sem juros.</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='28' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then deve fechar o navegador apos essa acao</span>
+				<div class='pre'>skipped</div>
 			
 		</li>
 	</ul>
@@ -483,125 +474,6 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.WebDriverException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Jan 30, 2019 11:17:33 PM</td>
-                                                        <td class='linked' test-id='11'>Cadastro de novo login inserir uma senha com 2 caracteres - Parte 1.Cadastro de novo login inserir uma senha com 2 caracteres.And informo o campo senha com dois caracteres os demais campos devem estar corretos</td>
-                                                        <td><pre><pre>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:13513
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Air-de-Guilherme.local', ip: '192.168.1.100', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '9.0.4'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.Login.cadastrarLogin(Login.java:21)
-	at steps.steps_parte1_cenario02.informo_o_campo_senha_com_caracteres_os_demais_campos_devem_estar_corretos(steps_parte1_cenario02.java:60)
-	at ✽.And informo o campo senha com dois caracteres os demais campos devem estar corretos(parte1_cenario02.feature:7)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:13513
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.Login.cadastrarLogin(Login.java:21)
-	at steps.steps_parte1_cenario02.informo_o_campo_senha_com_caracteres_os_demais_campos_devem_estar_corretos(steps_parte1_cenario02.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
-	at java.base/java.net.Socket.connect(Socket.java:591)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 70 more
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
                                 <span class='exception-name'>java.lang.AssertionError</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
@@ -617,7 +489,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jan 30, 2019 11:17:51 PM</td>
+                                                        <td>Jan 31, 2019 12:41:02 AM</td>
                                                         <td class='linked' test-id='18'>Cadastro de novo login inserir cpf invalido - Parte 1.Cadastro de novo login inserir cpf invalido.Then a mensagem Campo inválido deve aparecer</td>
                                                         <td><pre><pre>java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
@@ -651,37 +523,37 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>12</div>
+					<div class='panel-lead'>20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 30, 2019 11:17:03 PM</div>
+					<div class='panel-lead'>Jan 31, 2019 12:40:09 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 30, 2019 11:17:51 PM</div>
+			 		<div class='panel-lead'>Jan 31, 2019 12:41:20 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>48,181ms</div>
+					<div class='panel-lead'>71,225ms</div>
 				</div>
 			</div>
 		</div>
@@ -694,31 +566,31 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 2,
+				passParent: 3,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 1,
 				
-				passChild: 1,
-				failChild: 2,
+				passChild: 3,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 2,
+				exceptionsChild: 1,
 				
-				passGrandChild: 9,
-				failGrandChild: 2,
+				passGrandChild: 14,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 5,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 3,
+				exceptionsGrandChild: 6,
 			};
 		</script>
 		

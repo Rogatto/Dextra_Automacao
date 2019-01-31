@@ -9,3 +9,4 @@ pages/MenuAmericanas.class
 steps/steps_parte1_cenario01.class
 utilities/Print.class
 utilities/GeraCPF.class
+steps/steps_parte2_cenario01.class

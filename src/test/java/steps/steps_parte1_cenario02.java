@@ -25,6 +25,7 @@ public class steps_parte1_cenario02 {
     public Login login;
     public String nome;
     public String email;
+    public MenuAmericanas americanas;
 
     @Given("^que estou na tela principal do americanas2")
     public void que_estou_na_tela_principal_do_americanas() throws Throwable {
@@ -43,7 +44,7 @@ public class steps_parte1_cenario02 {
         nome = primeiro_nome + " " + segundo_nome;
         email = pathjson.get("email");
 
-        MenuAmericanas americanas = new MenuAmericanas(driver);
+        americanas = new MenuAmericanas(driver);
         americanas.acessaAmericanas();
     }
 
@@ -76,6 +77,7 @@ public class steps_parte1_cenario02 {
         } else {
             Assert.assertTrue(false);
         }
+        driver.quit();
     }
 
 

@@ -24,6 +24,7 @@ public class steps_parte1_cenario01 {
     public WebDriver driver;
     public Login login;
     public String nome;
+    public MenuAmericanas americanas;
 
     @Given("^que estou na tela principal do americanas1")
     public void que_estou_na_tela_principal_do_americanas() throws Throwable {
@@ -41,7 +42,7 @@ public class steps_parte1_cenario01 {
 
         nome = primeiro_nome + " " + segundo_nome;
 
-        MenuAmericanas americanas = new MenuAmericanas(driver);
+        americanas = new MenuAmericanas(driver);
         americanas.acessaAmericanas();
     }
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="15" failures="2" name="runner.TestRunner" time="0.104" errors="2" skipped="1">
+<testsuite tests="25" failures="2" name="runner.TestRunner" time="0.059" errors="0" skipped="6">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9.0.4+11"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/guilhermerogatto/Documents/workspace_automation/dextra_automacao"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/guilhermerogatto/Documents/git/dextra_automacao"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/guilhermerogatto/Documents/workspace_automation/dextra_automacao"/>
+    <property name="user.dir" value="/Users/guilhermerogatto/Documents/git/dextra_automacao"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="9.0.4+11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
@@ -63,220 +63,20 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: Cadastrar novo login com email teste@hotmail.com" name="Given que estou na tela principal do americanas1" time="0.031"/>
-  <testcase classname="Scenario: Cadastrar novo login com email teste@hotmail.com" name="When clico no link Cliente novo? Cadastrar antes de clicar faca login ou cadastre-se1" time="0.002"/>
+  <testcase classname="Scenario: Cadastrar novo login com email teste@hotmail.com" name="Given que estou na tela principal do americanas1" time="0.003"/>
+  <testcase classname="Scenario: Cadastrar novo login com email teste@hotmail.com" name="When clico no link Cliente novo? Cadastrar antes de clicar faca login ou cadastre-se1" time="0"/>
   <testcase classname="Scenario: Cadastrar novo login com email teste@hotmail.com" name="And informo o campo email com o valor de teste@hotmail.com os demais campos devem estar corretos" time="0"/>
   <testcase classname="Scenario: Cadastrar novo login com email teste@hotmail.com" name="Then a mensagem de e-mail já cadastrado deve aparecer" time="0"/>
   <testcase classname="Scenario: Cadastrar novo login com email teste@hotmail.com" name="Scenario: Cadastrar novo login com email teste@hotmail.com" time="0.001"/>
-  <testcase classname="Scenario: Cadastro de novo login inserir uma senha com 2 caracteres" name="Given que estou na tela principal do americanas2" time="0"/>
+  <testcase classname="Scenario: Cadastro de novo login inserir uma senha com 2 caracteres" name="Given que estou na tela principal do americanas2" time="0.002"/>
   <testcase classname="Scenario: Cadastro de novo login inserir uma senha com 2 caracteres" name="When clico no link Cliente novo Cadastrar antes de clicar faca login ou cadastre-se2" time="0"/>
-  <testcase classname="Scenario: Cadastro de novo login inserir uma senha com 2 caracteres" name="And informo o campo senha com dois caracteres os demais campos devem estar corretos" time="0.014">
-    <error message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:13513
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Air-de-Guilherme.local&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.2&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:13513
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Air-de-Guilherme.local&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.2&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.Login.cadastrarLogin(Login.java:21)
-	at steps.steps_parte1_cenario02.informo_o_campo_senha_com_caracteres_os_demais_campos_devem_estar_corretos(steps_parte1_cenario02.java:60)
-	at ✽.And informo o campo senha com dois caracteres os demais campos devem estar corretos(parte1_cenario02.feature:7)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:13513
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.Login.cadastrarLogin(Login.java:21)
-	at steps.steps_parte1_cenario02.informo_o_campo_senha_com_caracteres_os_demais_campos_devem_estar_corretos(steps_parte1_cenario02.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
-	at java.base/java.net.Socket.connect(Socket.java:591)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 70 more
-</error>
-    <system-out>CPF Gerado 756.764.519-04
-</system-out>
-  </testcase>
-  <testcase classname="Scenario: Cadastro de novo login inserir uma senha com 2 caracteres" name="Scenario: Cadastro de novo login inserir uma senha com 2 caracteres" time="0.022">
-    <error message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:13513
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Air-de-Guilherme.local&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.2&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:13513
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Air-de-Guilherme.local&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.2&apos;, java.version: &apos;9.0.4&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.Login.cadastrarLogin(Login.java:21)
-	at steps.steps_parte1_cenario02.informo_o_campo_senha_com_caracteres_os_demais_campos_devem_estar_corretos(steps_parte1_cenario02.java:60)
-	at ✽.And informo o campo senha com dois caracteres os demais campos devem estar corretos(parte1_cenario02.feature:7)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:13513
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.Login.cadastrarLogin(Login.java:21)
-	at steps.steps_parte1_cenario02.informo_o_campo_senha_com_caracteres_os_demais_campos_devem_estar_corretos(steps_parte1_cenario02.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
-	at java.base/java.net.Socket.connect(Socket.java:591)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 70 more
-</error>
-  </testcase>
-  <testcase classname="Scenario: Cadastro de novo login inserir uma senha com 2 caracteres" name="Then a mensagem Senha Fraca e Senha precisa ter entre 6 a 50 caracteres deve aparecer" time="0.033">
-    <skipped/>
-  </testcase>
+  <testcase classname="Scenario: Cadastro de novo login inserir uma senha com 2 caracteres" name="And informo o campo senha com dois caracteres os demais campos devem estar corretos" time="0"/>
+  <testcase classname="Scenario: Cadastro de novo login inserir uma senha com 2 caracteres" name="Then a mensagem Senha Fraca e Senha precisa ter entre 6 a 50 caracteres deve aparecer" time="0"/>
+  <testcase classname="Scenario: Cadastro de novo login inserir uma senha com 2 caracteres" name="Scenario: Cadastro de novo login inserir uma senha com 2 caracteres" time="0"/>
   <testcase classname="Scenario: Cadastro de novo login inserir cpf invalido" name="Given que estou na tela principal do americanas3" time="0"/>
   <testcase classname="Scenario: Cadastro de novo login inserir cpf invalido" name="When clico no link Cliente novo? Cadastrar antes de clicar faca login ou cadastre-se3" time="0"/>
   <testcase classname="Scenario: Cadastro de novo login inserir cpf invalido" name="And informo o campo cpf com um cpf invalido" time="0"/>
-  <testcase classname="Scenario: Cadastro de novo login inserir cpf invalido" name="Then a mensagem Campo inválido deve aparecer" time="0">
+  <testcase classname="Scenario: Cadastro de novo login inserir cpf invalido" name="Then a mensagem Campo inválido deve aparecer" time="0.006">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -285,7 +85,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at ✽.Then a mensagem Campo inválido deve aparecer(parte1_cenario03.feature:8)
 </failure>
   </testcase>
-  <testcase classname="Scenario: Cadastro de novo login inserir cpf invalido" name="Scenario: Cadastro de novo login inserir cpf invalido" time="0.001">
+  <testcase classname="Scenario: Cadastro de novo login inserir cpf invalido" name="Scenario: Cadastro de novo login inserir cpf invalido" time="0.007">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -294,4 +94,26 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at ✽.Then a mensagem Campo inválido deve aparecer(parte1_cenario03.feature:8)
 </failure>
   </testcase>
+  <testcase classname="Scenario: Cadastro de novo login e validacoes" name="Given que estou na tela principal do americanas4" time="0"/>
+  <testcase classname="Scenario: Cadastro de novo login e validacoes" name="When clico no link Cliente novo? Cadastrar antes de clicar faca login ou cadastre-se4" time="0"/>
+  <testcase classname="Scenario: Cadastro de novo login e validacoes" name="And informo todos os campos corretamente salvando novo usuario" time="0"/>
+  <testcase classname="Scenario: Cadastro de novo login e validacoes" name="And logado na aplicacao fazer busca pelo texto Moto G6" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Cadastro de novo login e validacoes" name="And adiciono dois produtos a sua cesta" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Cadastro de novo login e validacoes" name="And valido que o total da compra é inferior a 5 mil reais" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Cadastro de novo login e validacoes" name="And valido que a compra pode ser dividida em até 10x sem juros." time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Cadastro de novo login e validacoes" name="Then deve fechar o navegador apos essa acao" time="0.008">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Cadastro de novo login e validacoes" name="Scenario: Cadastro de novo login e validacoes" time="0.008">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Cadastro de novo login e validacoes" name="Scenario: Cadastro de novo login e validacoes" time="0.008"/>
 </testsuite>

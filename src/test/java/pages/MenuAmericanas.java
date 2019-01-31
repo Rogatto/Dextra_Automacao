@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class MenuAmericanas {
@@ -15,4 +16,7 @@ public class MenuAmericanas {
         driver.get(baseUrl);
     }
 
+    public void efetuaPesquisa(String itembusca){
+        driver.findElement(By.id("h_search-input")).sendKeys(itembusca);
+    }
 }
